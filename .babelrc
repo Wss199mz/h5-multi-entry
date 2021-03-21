@@ -1,0 +1,21 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"modules": "usage",
+        "targets": { "browsers": ["ie >=9", "last 2 versions", "safari >= 7"] }, 
+        "useBuiltIns": true
+			}
+		]
+	],
+	"plugins": [
+		["import", {
+			"libraryName": "vant",
+			"libraryDirectory": "es",
+			"style": true
+		}, "vant"],
+		"@babel/plugin-transform-runtime",
+		"@babel/plugin-proposal-class-properties"
+	]
+}
